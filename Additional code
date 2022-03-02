@@ -1,0 +1,9 @@
+public static void main(String []args){
+	TakesScreenshot a =(TakesScreenshot) driver;
+		
+	File screenshot = a.getScreenshotAs(OutputType.FILE);
+	
+	File loc = new File("C:\\Users\\Siva\\eclipse-workspace\\Selenium\\Screenshot\\cricbuzz.png");
+	
+	FileUtils.copyFile(screenshot, loc);
+	}
